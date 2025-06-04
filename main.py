@@ -1,3 +1,4 @@
+print("-------------------------------")
 print("1. Celcius to Farenheit")
 print("2. Farenheit to Celcius")
 
@@ -20,4 +21,11 @@ def farenToCel():
   cel = (faren - 32) * 5 / 9
   print(f"{cel}° Celcius")
 
-main()
+while True:
+  main()
+  print("-------------------------------")
+  print()
+
+  option = input("Do you wish to quit [Yes(y)/No(n)]: ")
+  if option == "Y" or option == "y":
+    break
