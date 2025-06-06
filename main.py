@@ -1,15 +1,17 @@
-print("-------------------------------")
-print("1. Celcius to Farenheit")
-print("2. Farenheit to Celcius")
-
 def main():
-    choice = int(input("Choose an option [1 - 2]: "))
-    if choice == 1:
-        celToFaren()
-    elif choice == 2:
-        farenToCel()
-    else:
-        print("Invalid Choice")
+    print("-------------------------------")
+    print("1. Celcius to Farenheit")
+    print("2. Farenheit to Celcius")
+    try:
+        choice = int(input("Choose an option [1 - 2]: "))
+        if choice == 1:
+            celToFaren()
+        elif choice == 2:
+            farenToCel()
+        else:
+            print("Invalid Choice")
+    except ValueError:
+        print("Enter valid input")
 
 def celToFaren():
     cel = float(input("Enter value in Celcius: "))
